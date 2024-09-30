@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ben_tech/src/features/landing/presentation/screens/landing_screen.dart';
 
-Widget loginForm(GlobalKey<FormState> formKey) {
+Widget loginForm(GlobalKey<FormState> formKey, BuildContext context) {
   return Form(
     key: formKey,
     child: Column(
@@ -43,9 +44,14 @@ Widget loginForm(GlobalKey<FormState> formKey) {
         ElevatedButton(
           onPressed: () {
             if (formKey.currentState?.validate() == true) {
-              ScaffoldMessenger.of(formKey.currentContext!).showSnackBar(
-                const SnackBar(content: Text('Login Successful')),
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const LandingPage(),
+                ),
               );
+              // ScaffoldMessenger.of(formKey.currentContext!).showSnackBar(
+              //   const SnackBar(content: Text('Login Successful')),
+              // );
             }
           },
           child: const Text('Login'),
