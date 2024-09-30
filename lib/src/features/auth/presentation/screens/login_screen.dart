@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              width: 200,
+              // width: 200,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

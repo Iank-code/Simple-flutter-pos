@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget buildAppBenefits() {
   return Column(
     children: [
-      Image.asset('assets/images/login.jpg', width: 300, height: 300),
+      Image.asset('assets/images/login.jpg', width: 500, height: 500),
       _AppBenefits(),
     ],
   );
@@ -16,21 +16,30 @@ Widget _AppBenefits() {
         children: [
           Icon(Icons.check_circle, color: Colors.green),
           SizedBox(width: 8),
-          Text('Beautiful Display of sale')
+          Text(
+            'Beautiful Display of sale',
+            style: TextStyle(fontSize: 20.5),
+          )
         ],
       ),
       Row(
         children: [
           Icon(Icons.check_circle, color: Colors.green),
           SizedBox(width: 8),
-          Text('Easy Payment Processing'),
+          Text(
+            'Easy Payment Processing',
+            style: TextStyle(fontSize: 20.5),
+          ),
         ],
       ),
       Row(
         children: [
           Icon(Icons.check_circle, color: Colors.green),
           SizedBox(width: 8),
-          Text('Fast Customer Support'),
+          Text(
+            'Fast Customer Support',
+            style: TextStyle(fontSize: 20.5),
+          ),
         ],
       ),
     ],
